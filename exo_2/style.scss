@@ -1,0 +1,24 @@
+#mainContent {
+  width: 100rem;
+  height: 100rem;
+  background-color: #4199fc;
+  padding-top: 8rem;
+  padding-left: 8rem;
+
+  #leSoleil {
+    background-color: #fcca00;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+  }
+
+  .cloud {
+    width: 6rem;
+    height: auto;
+    background-color: white;
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-image: url("img/cloud-solid.svg");
+  }
+}
