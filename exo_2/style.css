@@ -5,20 +5,55 @@
   padding-top: 8rem;
   padding-left: 8rem;
 }
-#mainContent #leSoleil {
+
+#leSoleil {
   background-color: #fcca00;
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
-}
-#mainContent .cloud {
-  width: 6rem;
-  height: auto;
-  background-color: white;
-  mask-size: contain;
-  mask-position: center;
-  mask-repeat: no-repeat;
-  mask-image: url("img/cloud-solid.svg");
+  animation: slideSoleil 10s normal linear;
 }
 
-/*# sourceMappingURL=style.css.map */
+.cloud {
+  width: 6rem;
+  height: auto;
+  filter: invert(1);
+}
+
+#c1 {
+  margin-left: 10rem;
+  display: block;
+  animation: slideleftC1 10s normal linear;
+}
+
+#c2 {
+  margin-left: 25rem;
+  animation: slideleftC2 10s normal linear;
+}
+
+@keyframes slideleftC1 {
+  from {
+    margin-left: 15%;
+  }
+  to {
+    margin-left: 10%;
+  }
+}
+
+@keyframes slideleftC2 {
+  from {
+    margin-left: 30%;
+  }
+  to {
+    margin-left: 20%;
+  }
+}
+
+@keyframes slideSoleil {
+  from {
+    margin-left: 1rem;
+  }
+  to {
+    margin-left: 3rem;
+  }
+}
